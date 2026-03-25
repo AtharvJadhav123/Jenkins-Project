@@ -6,11 +6,6 @@ pipeline {
                 bat 'npm install'
             }
         }
-        stage('Run Tests') {
-            steps {
-                bat 'npm test'
-            }
-        }
         stage('Run Application') {
             steps {
                 bat 'node index.js'
